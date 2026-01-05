@@ -69,6 +69,10 @@ class User(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     email: Mapped[str] = mapped_column(String(255), nullable=False, unique=True)
     full_name: Mapped[Optional[str]] = mapped_column(String(200))
+    password_hash: Mapped[Optional[str]] = mapped_column(String(255))
+    is_superuser: Mapped[bool] = mapped_column(
+        default=False, server_default=text("0"), nullable=False
+    )
     is_active: Mapped[bool] = mapped_column(
         default=True, server_default=text("1"), nullable=False
     )
