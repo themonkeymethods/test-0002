@@ -19,6 +19,21 @@ uvicorn app.main:app --reload
 
 The API will be available at `http://127.0.0.1:8000`.
 
+### Database migrations (Alembic)
+
+From the `backend` directory:
+
+```bash
+alembic upgrade head
+```
+
+To target a specific database, set `DATABASE_URL` (defaults to
+`sqlite:///./app.db`):
+
+```bash
+DATABASE_URL=sqlite:////absolute/path/to/app.db alembic upgrade head
+```
+
 ### Frontend (React + TypeScript)
 
 ```bash
