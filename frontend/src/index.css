@@ -1,0 +1,13 @@
+:root {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #0f172a;
+  background-color: #f8fafc;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  padding: 3rem;
+}
