@@ -4,6 +4,9 @@ Building Magazine
 
 ## Local development
 
+For automated setup (dependencies, env file, database, and systemd unit), see
+[`install.md`](install.md).
+
 ### Backend (FastAPI)
 
 ```bash
